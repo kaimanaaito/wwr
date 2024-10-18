@@ -1,19 +1,20 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif, 'Helvetica Neue'; /* フォントファミリーを指定（デフォルトから変更） */
+    font-size: 16px; /* フォントサイズを指定 */
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 header {
-    background-color: #519653; 
+    background: linear-gradient(to right, #327297, #A9C6D8); /* スモークグリーンからグレーよりの水色 */
     color: white;
-    padding: 10px 60px 10px 80px; 
+    padding: 10px 60px; 
     display: flex;
     align-items: center;
-    justify-content: right; 
-    gap: 20px; 
-    position: relative; 
+    justify-content: space-between; /* ロゴとナビゲーションの間にスペースを追加 */
+    border: 2px solid #A9C6D8; /* ボーダーを追加 */
+    border-radius: 10px; /* ボーダーの角を丸くする */
 }
 
 nav {
@@ -24,19 +25,19 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px; /* 追加のパディングでスペースを確保 */
+    padding: 10px; /* リンクのパディング */
+    font-weight: bold; /* 太字に設定 */
 }
 
 #logo_link {
-    position: absolute; /* ロゴを独立させるために位置を設定 */
-    left: 20px; /* 左端に配置 */
+    margin-right: auto; /* 左にロゴを寄せる */
 }
-
 
 #hero {
     position: relative;
     text-align: center;
     color: white;
+    margin: 20px; /* ヒーローセクションのマージン */
 }
 
 #hero-box img {
@@ -58,7 +59,7 @@ nav a {
 .home-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 20px; /* グリッドアイテムの間隔 */
     padding: 20px;
 }
 
@@ -69,7 +70,9 @@ section {
 .card-img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 8px; /* ボーダーの角を丸くする */
+    border: 1px solid #A9C6D8; /* ボーダーを追加 */
+    box-sizing: border-box; /* ボックスサイズを指定 */
 }
 
 .camping-img {
@@ -86,26 +89,30 @@ section {
 .msg {
     padding: 20px;
     background-color: #f4f4f4;
+    border: 1px solid #A9C6D8; /* ボーダーを追加 */
+    border-radius: 5px; /* ボーダーの角を丸くする */
 }
 
 footer {
-    background-color: #519653; 
+    background: linear-gradient(to right, #4A7C7D, #A9C6D8); /* スモークグリーンからグレーよりの水色 */
     color: white;
     text-align: center;
     padding: 10px 20px;
+    border: 2px solid #A9C6D8; /* ボーダーを追加 */
+    border-radius: 10px; /* ボーダーの角を丸くする */
 }
 
 .social a {
-    margin: 0 10px;
+    margin: 0 10px; /* ソーシャルリンクのマージン */
 }
-
 
 .logo {
     height: 60px; 
-    width: auto; 
+    width: 60px; /* 高さと幅を60pxに設定 */
     padding: 10px; 
     box-sizing: content-box; 
     margin-top: 6px; 
+    border-radius: 50%; /* 丸型にするためのボーダー半径設定 */
 }
 
 .home-title {
@@ -113,17 +120,18 @@ footer {
     font-size: 48px; 
     color: #fff; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    font-weight: bold; /* タイトルも太字に設定 */
 }
 
 .button-box .book {
-    background-color: #519653; 
+    background-color: #4A7C7D; /* スモークグリーン */
     color: white; 
     padding: 10px 20px; 
     text-decoration: none; 
-    border-radius: 5px; 
+    border-radius: 5px; /* ボーダーの角を丸くする */
     transition: background-color 0.3s; 
 }
 
 .button-box .book:hover {
-    background-color: #45a049; 
+    background-color: #3B6B6B; /* 少し濃いスモークグリーン */
 }
